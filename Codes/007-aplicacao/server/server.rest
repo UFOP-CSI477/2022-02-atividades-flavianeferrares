@@ -1,0 +1,31 @@
+GET http://localhost:3333/estados
+
+### PUT http://localhost:3333/estados Content-Type: application/json
+
+{
+"id": 3, "nome": "Acre", "sigla": "AC"
+}
+
+###
+
+POST http://localhost:3333/cidades Content-Type: application/json
+
+{
+"nome" : "Cidade test", "estado_id": 2
+}
+
+### GET http://localhost:3333/cidades
+
+### GET http://localhost:3333/cidades/1
+
+### PUT http://localhost:3333/cidades Content-Type: application/json
+
+{
+"id": 4, "nome" : "Cidade atualizada", "estado_id": 1
+}
+
+### DELETE http://localhost:3333/cidades Content-Type: application/json
+
+{
+"id": 4
+}
